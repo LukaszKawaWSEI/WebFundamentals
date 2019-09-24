@@ -1,0 +1,196 @@
+jezyki:
+
+deklaratwyne: SQL
+imperatywne: C#, java, python
+funkcyjne: 
+
+.NET
+
+framework
+
+verbatim string - z @ np. sciezki dostepu s = @"c:\users\lukawa"
+
+interpolated string (szablon napisu) s = $ "wynik = {x} srednia {y}"
+
+console read 
+
+zajecia 2 - 10.09
+
+Solution - wiele projektow w jednym miejscu
+
+aplikacja i testy - oddzielne projekty
+
+biblioteka, projekt typu library - pliki dll
+
+systemy kontroli wersji 
+
+git
+
+git prowadzacego - github.com/kmolenda
+
+github desktop 
+
+add .gitignore: visual studio - jesli sie nie wybierzemy kopiuje wszystkie pliki, jesli wybrane to kopiuje tylko kod
+
+markdown - do dokumentacji 
+
+plik sln - otwiera solucje ?
+
+
+zmienna od malejLiteryPotemDuze - camelCase
+
+classy od Duzej
+
+struktura folderu:
+folder obj: pliki tymczasowe
+bin - od binary; podfoldery debug i release 
+
+tryby release i debug
+
+== sprawdz czy rowne
+
+= przypisz
+
+!= rozne
+
+Referencja - odwolanie, dodanie ++ using i nazwa np. using Microsoft.VisualBasic;
+
+
+using na szaro kiedy referencja nie jest wykorzystywana!!
+
+zajecia 2 -11.09
+
+
+byte, short, int, long - typy integera
+sbyte
+
+int - liczba calkowita; 4 bajty (32 bity: 1 bit znaku + 31 na wartosc)
+
+overflow - prrzekroczenie limitu dla typu np 
+
+byte x = 255;
+y = x + 2; 
+
+1) overflow
+2) przkrecenie licznika
+
+
+checked/unchecked
+
+checked // wlaczona kontrola przepelnienia - blad overflow
+unchecked
+
+{
+
+}
+
+unchecked // prawdopodobnie domyslne w c#; przekrecenie
+
+p & q       p && q  - przy podwojnym &; sprawdza az znajdzie jeden falsz -> wtedy calosc to false
+
+p | q       p || q - przy podwojnym ||; sprawdza az znajdzie jedna prawde -> wtedy calosc alternatywy to true
+
+np. dla x = -1
+if (x > 0 && sqrt x > 2)
+
+struct
+
+garbage collector - zarzadza stosem pamieci (heap); 
+
+double x, double y
+
+x - y < 0.00001 // zakladany poziom dokladnosci
+
+float nie nadaje sie do wykonywania obliczen; 
+
+edycja - > zaawansowane - > formatuj dokument
+
+x = x+10 <--> x+=10
+
+dyrektywy prekompilacji
+
+np.
+
+#if DEBUG
+
+            Console.WriteLine(wylosowana);
+#endif
+
+zajecia 4 12.09
+
+sln - pliki solucji
+
+csproj - pojedynczy projekt
+
+
+break; // wyjdz z petli <> continue - przerwywa petle i wraca do poczatku
+
+przeczytac kontrole przeplywu sterowania Lab. 04. Kontrola przep³ywu sterowania (flow of control) // https://e.wsei.edu.pl/course/view.php?id=492
+
+wszystkie 3 wyklady
+
+zmienna lokalna
+	
+w namespace tylko klasy
+
+zajecia 6 - 16.09
+
+class - definicja obiektu:
+
+pola/ fields - zmienne w ktorych przechowujemy dane
+
+wlasnosci (properties) - bez ()	
+
+akcje - methods
+
+i konstruktory
+
+
+
+(private/public - modyfikatory dostepu)
+
+new - slowo kluczowe konstruktora
+
+public decimal c {get;set;} //automatic properties
+
+konwencje nazw funkcji
+
+double getObwod
+void setBok
+bool isKwadrat
+
+
+               throw new NotImplementedException(); przy niedokonczonych metodach
+
+
+17.09 
+
+dll - dynamic library; bibiloteka klas
+
+kazda klasa w oddzielnym pliku, nazwa pliku taka sama jak nazwa klasy
+
+enum - wyliczenie
+
+kolekcje: list<..>, Dictionary<K,V>
+
+Linq - biblioteka wspomagajaca prace z kolekcjami
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

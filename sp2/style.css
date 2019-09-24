@@ -1,0 +1,19 @@
+body {
+    font-size: 10px;
+}
+div {
+    background: limegreen;
+    margin: 1px;
+}
+p {
+    background: green;
+}
+#ostatni {
+    padding: 15px; 
+}
+.duzy {
+    font-size: 30px;
+}
+.niebieski {
+    color: blue;
+}

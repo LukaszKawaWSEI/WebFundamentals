@@ -1,0 +1,35 @@
+body {
+    background: lightgrey;
+}
+main {
+    margin: 0 auto;
+    display: grid;
+    width: 1200px;
+    grid-template-rows: 150px 700px 150px;
+    grid-template-columns: 250px 1fr 2fr;
+    grid-template-areas:
+        "header header header"
+        "aside article right"
+        "footer footer footer"; 
+    }
+    header {
+        background: lightblue;
+        grid-area: header;
+    }
+    aside {
+        background: red;
+        grid-area: aside;
+    }
+    article {
+        background: lightskyblue;
+        grid-area: article;
+    }
+    #right {
+        background: lightcyan;
+        grid-area:  right;
+    }
+    footer {
+        background: yellow;
+        grid-area: footer;
+    }
+

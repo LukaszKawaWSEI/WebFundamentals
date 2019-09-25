@@ -7,6 +7,9 @@ mithril emmet dodatek do VS code  h${Nag³owek h$}*6
 
 encje
 
+&lt;
+&gt;
+&amp;
 &nbsp; - non-breaking space
 
 ctrl + /	
@@ -19,5 +22,11 @@ inne
 certyfikat ssl
 
 home.pl, nazwa.pl, aftermarket.pl, ovh
+
+kimsufi.pl
+
+
+
+
 
 

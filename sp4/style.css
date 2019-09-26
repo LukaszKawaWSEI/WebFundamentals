@@ -1,0 +1,95 @@
+body{
+    background: black;
+    text-align: center;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+header {
+height: 60px;
+background: lightblue
+}
+
+main > div {
+display: grid;
+grid-template-rows: 140px 500px 200px 200px;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "nav nav nav nav nav nav"
+                    "aside aside article article right right"
+                    "down down down down down down"
+                    "bottomLeft bottomLeft bottomLeft bottomRight bottomRight bottomRight"
+}
+nav {
+    background: lightgray;
+    grid-area: nav;
+}
+aside {
+background: lightgreen;
+grid-area: aside;
+}
+article {
+    background: lightsalmon;
+    grid-area: article;
+}
+#right {
+    background: lightgoldenrodyellow;
+    grid-area: right;
+}
+#down {
+    background: lightskyblue;
+    grid-area: down;
+}
+#bottomLeft {
+    background: lightsteelblue;
+    grid-area: bottomLeft;
+}
+#bottomRight {
+    background: lightyellow;
+    grid-area:  bottomRight
+}
+footer {
+    height: 80px;
+    background: yellow;
+}
+
+@media (max-width: 800px){
+    main > div {
+    width: 100%;
+    grid-template-rows: 140px 300px 300px 200px 120px 120px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nav nav"
+                    "aside article"
+                    "right right"
+                    "down down"
+                    "bottomLeft bottomLeft"
+                    "bottomRight bottomRight"
+
+}
+}
+@media (max-width: 550px){
+    main > div {
+    width: 100%;
+    grid-template-rows: 140px 300px 300px 300px 200px 120px 120px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav"
+                    "aside"
+                    "article" 
+                    "right"
+                    "down"
+                    "bottomLeft"
+                    "bottomRight"
+}
+}
+
+
+   
+
+
+
+
+
+

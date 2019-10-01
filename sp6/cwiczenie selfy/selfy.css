@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    /* color: white; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* font-family: 'Aleo', serif; */
+        text-decoration: none;
+        background: #f3f4f5;
+}
+a {
+    text-decoration: none;
+    color: #3c4a52;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #fff;
+    background: yellow;
+}
+
+
+#background {
+    /* background: url(assets/masthead@2x.jpg); */
+    position: absolute;
+    z-index: -1;
+}
+
+main {
+ width: 1140px;
+ margin: 0 auto;
+  }
+
+  header {
+    padding: 60px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #cad2d7 1px solid;
+}
+nav a {
+    color: #2d3438;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 6px 24px;
+    margin: 0 6px;
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
+}
+nav a:hover {
+    color: #fff;
+    background: #646d72;
+}
+
+.active {
+    background: #ffc000;
+    color: #fff;
+}
+#welcome {
+    color: white;
+    padding-bottom: 250px;
+}
+
+#welcome p {
+font-size: 18px;
+/* margin: 0; */
+}
+
+#welcome .head   {
+    font-weight: 900;
+    font-size: 96px;
+    margin-top: 226px;
+}
+#welcome .subhead {
+font-size: 28px;
+font-family: 'Aleo', serif;
+color: #e2e2e2;
+margin-top: 25px;
+margin-bottom: 14px;
+}
+#welcome .subhead2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25px 0 52px;
+}
+
+.text   {
+    max-width: 741px;
+}
+
+#start {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#start .col {
+    width: 30%;
+}
+#start h2 {
+    font-size: 36px;
+    color: #2d3438;
+    font-weight: 600;
+    align-items: baseline;
+    margin-bottom: 18px;
+}
+
+
+#start h2::after {
+    content: '';
+color: #ffc000;
+padding-left: 3px;
+
+}
+
+footer {
+    padding: 50px 0;
+    border-top: #cad2d7 1px solid;
+    display: flex;
+    justify-content: space-between
+}
+
+.social a:hover {
+    background:  none;
+}
+

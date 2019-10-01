@@ -3,7 +3,7 @@ http://ranking.gemius.com/pl/
 Google Analytics
 
 
-mithril emmet dodatek do VS code  h${Nag³owek h$}*6 
+mithril emmet dodatek do VS code  h${Nagï¿½owek h$}*6 
 
 encje
 
@@ -12,7 +12,7 @@ encje
 &amp;
 &nbsp; - non-breaking space
 
-ctrl + /	
+ctrl + /	-- komentarz    
 
 http
 https
@@ -24,6 +24,10 @@ certyfikat ssl
 home.pl, nazwa.pl, aftermarket.pl, ovh
 
 kimsufi.pl
+
+d3.js
+
+immediate mode - canvas
 
 
 

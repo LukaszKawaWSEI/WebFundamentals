@@ -1,0 +1,64 @@
+body {
+    background: lightgrey;
+}
+
+main {
+    margin: 50px auto;
+    width: 1200px;
+    height: 2400px;
+    position: relative;
+    background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main > div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.kw {
+    width: 200px;
+    height: 200px;    
+    /* position: relative;   */
+    position: absolute;
+
+}
+#k1{
+    background: lightsalmon;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}   
+#k1:hover{
+    background: red;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+#k2 {
+    background: purple;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    /* display: none; */
+    /* display: hidden; <--> opacity: 0;  */
+}
+#k3{
+    background: green;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+#k4{
+    background: whitesmoke;
+    top: 150px;
+    left: 150px;
+    z-index: 0;
+}
+#cookies {
+    left: 0;
+    width: 100px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    top: calc(50% - 50px);  
+    position: sticky;
+}

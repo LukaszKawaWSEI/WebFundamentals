@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="https:/jakasstronawww.pl/skrypt.php" method="GET"> -->
+    <form action="https:/jakasstronawww.pl/skrypt.php" method="POST">  <!-- post: dane poufne oraz pliki  -->
+    Imie <input pattern="" type="text" name="imie" id="" placeholder="tu wpisz imie durniu">
+    Nazwisko <input type="text" name="nazwisko" id="" autofocus> 
+    <!-- autofocus - tam ustawia sie znak zachety po przejsciu/ odswiezeniu strony -->
+    Wiek <input type="text" name="wiek" id="">
+    email <input type="email" name="email" id="" required>
+    ilosc <input type="number" name="ilosc" min="1" max="99" id="">
+    <input type="submit" value="Wyslij!"> <br>
+    <!-- <button type="button">Podpiety JS</button> --> default type submit
+    <input type="file" name="" id="">
+    <br>
+    Hasło <input type="password" name="pass" id=""> <br>
+    <input type="checkbox" name="regulamin" id="regulamin"> <label for="regulamin">Akceptuje regulamin</label>
+    <!-- label do kazdego pola  -->
+<br>
+Płeć:
+
+K <input type="radio" name="plec" id="" value="K">
+M <input type="radio" name="plec" id="" value="M"> <br>
+
+Uwagi:
+<textarea name="test" id="" cols="30" rows="10"></textarea>
+
+<!-- wyczysc button nigdy obok wyslij -->
+<br>
+
+<input type="hidden" name="tajnecos" value="tajnaliczba">
+Wybierz kolor: <select name="" id="" multiple>
+    <option value="czarny">Czarny</option>
+    <option value="biel">bialy</option>
+    <option value="nieb">niebieski</option>
+</select>
+<input type="reset" value="Wyczysc">
+
+</form>
+</body>
+</html>

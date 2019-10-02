@@ -19,9 +19,13 @@ a:hover {
 
 
 #background {
-    /* background: url(assets/masthead@2x.jpg); */
+    background: url(assets/masthead@2x.jpg);
+    background-position: center center;
+    background-size: cover;
     position: absolute;
     z-index: -1;
+    width: 100%;
+    height: 950px;
 }
 
 main {
@@ -103,8 +107,6 @@ margin-bottom: 14px;
     align-items: baseline;
     margin-bottom: 18px;
 }
-
-
 #start h2::after {
     content: '';
 color: #ffc000;
@@ -119,7 +121,58 @@ footer {
     justify-content: space-between
 }
 
-.social a:hover {
+footer a:hover {
     background:  none;
 }
+footer img {
+    margin-right: 10px;
+    opacity: 0.4;
+    transition: all 1s ease-in-out;
+}
 
+footer img:hover {
+    opacity: 0.8;
+    background: none;
+}
+
+#smallphoto {
+    border: solid 5px white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#about  {
+    display: flex;
+    justify-content: space-between;
+}
+#aboutfooter {
+    margin-top: 70px;
+}
+.textabout {
+    font-family: "robotoregular";
+    font-size: 16px;
+    text-shadow: #646d72 1px;
+    color: #656a6f;
+    margin-right: 10px;
+}
+#dziwnytekst {
+    font-family: "aleoitalic";
+    font-size: 24px;
+    color: #3c4a52;
+    font-weight: 400;
+}
+#abouttitle {
+    font-size: 36px;
+    color: #2d3438;
+    font-weight: 600;
+    align-items: baseline;
+    margin-bottom: 18px;
+}
+
+
+#abouttitle h2::after {
+    content: '';
+color: #ffc000;
+padding-left: 3px;
+
+}

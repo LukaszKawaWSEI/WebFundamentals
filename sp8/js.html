@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="javascript.js"></script> -->
+</head>
+<body>
+        <p>
+            Podaj kolor: <input type="text" name="" id="color"  > <!-- oninput="zmienKolor()"-->
+            <button id="pokazUkryj">Pokaz/ukryj boxa</button>
+
+            <button id="odlicz">Odlicz do 10</button>
+        </p>
+        <div id="pudelko" class="lemonka">
+
+        </div>
+
+        <script type="text/javascript">
+        // pobieramy obiekt #pudelko
+        // let box = document.getElementById('pudelko'); //deklaracja zmiennej tez var
+        
+        let box = document.querySelector("#pudelko");
+        let kolorBox = document.querySelector("#color")
+
+        kolorBox.addEventListener("input", zmienKolor)
+
+        let pokazUkryjBtn = document.querySelector("#pokazUkryj")
+        pokazUkryjBtn.addEventListener("click", pokazUkryjBox)
+
+        let odliczBtn = document.querySelector("#odlicz")
+        odliczBtn.addEventListener("click",odliczanie)
+
+        //  box.innerText = "<b> to dziala jako tako inner TEXT</b>"
+        box.innerHTML = "<b> to dziala jako tako inner HTML</b>"
+        
+        // zmiana formatowania
+        // box.style.backgroundColor = "red";
+        // box.className += ' czerwony'
+        box.classList.add("czerwony")
+        box.classList.remove("lemonka")
+        //let text = box.classList.value 
+
+        function zmienKolor(e) {
+            console.log(e)
+            box.style.backgroundColor = kolorBox.value
+        }
+
+        function pokazUkryjBox(e) {
+            console.log(e)
+            box.classList.toggle("hidden") //toggle jak jest to usuwa, a jak nie ma to dodaje :)
+        }
+        // function odliczanie() {
+        //     for(let licznik = 1; licznik < 11; licznik++)
+        //     {
+        //         box.innerHTML +=  "<br>" + licznik 
+        //     }
+        // }
+
+        // function odliczanie() {
+        //     if(licznikInterval)
+        //     {clearInterval(licznikInterval)
+        //         licznikInterval = undefined
+        //     }
+        //     else 
+        //     {
+        //     licznikInterval = setInterval(wypiszLicznik,1000)
+        //     }
+        // }
+
+            let licznik = 1
+            let licznikInterval // undefinied czyli null puste
+
+            function odliczanie() {
+                if(licznik<11) {
+                    wypiszLicznik()
+                    setTimeout(odliczanie, 300)
+                }
+            }     
+
+      
+        
+        function wypiszLicznik() {
+            box.innerHTML += '<br>' + licznik
+            licznik++
+        }
+
+        </script>
+</body>
+</html>

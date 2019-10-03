@@ -1,0 +1,24 @@
+body {
+    background: lightblue;
+}
+#pudelko {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto !important;
+
+}
+
+.lemonka {
+    background: lemonchiffon;
+}
+.czerwony {
+    background: red;
+}
+/* !important jesli uzyte po np. background: lemonchiffon; 
+to inne style (nawet bardziej szczegolowe)
+nie beda zmienialy tego stylu  */
+
+.hidden {
+    display: none;
+}
+

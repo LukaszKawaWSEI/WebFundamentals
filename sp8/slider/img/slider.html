@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="slider">
+            <img src="m1.jpg" width="1200" alt="">
+            <img src="m2.jpg" width="1200" alt="">
+            <img src="m3.jpg" width="1200" alt="">
+            <img src="m4.jpg" width="1200" alt="">
+            <img src="m5.jpg" width="1200" alt="">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    let slider = document.querySelector("#slider")
+    let sliderLeft = 0
+    let predkosc = -10 
+
+    animuj()
+
+    function animuj() {
+
+        slider.style.left = sliderLeft + 'px'
+        sliderLeft += predkosc
+
+        if(sliderLeft < -6000 + document.body.offsetWidth)
+        {
+            // setTimeout(animuj, 1)
+            predkosc = 100
+
+        } 
+        else if(sliderLeft > 0 )
+        {
+
+            predkosc = -10  
+        }
+        requestAnimationFrame(animuj)
+ 
+    }
+
+
+    </script>
+ 
+
+</body>
+
+</html>
